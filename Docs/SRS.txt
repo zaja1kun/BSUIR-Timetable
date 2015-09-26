@@ -1,0 +1,84 @@
+Desktop shedule for BSUIR students «BSUIR Timetable»
+
+Software Requirements Specification
+
+Document
+
+Version: 1.0	Date: (26/09/2015)
+
+
+1    INTRODUCTION
+
+1.1 Purpose  
+The purpose of the project is to give BSUIR student fast and convenient way to call to mind the nearest classes. User
+will have possibility to find shedule of current term for all groups, subgroups and teachers.
+
+1.2 Scope 
+BSUIR Timetable is a simple desktop shedule application. It's main purpose is to help students allocate time to prepare
+for upcoming classes.
+There are a variety of shedule applications for BSUIR in mobile stores. This product offer quite similar functionality
+but on desktops. Due to this application is in fact the only one of its kind at the moment.
+Main advantage of the app is opportunity to check timetable without distraction from work, thanks to tray icon and
+popup.
+
+1.3 Definitions, Acronyms, and Abbreviations  
+ - BSUIR - Belarusian State Univercity of Informatics and Radioelectronics
+
+1.4 References  
+
+
+2    USER REQUIREMENTS
+
+2.1 Software Interfaces
+ - BSUIR Shedule API(XML Data Service)
+
+2.2 User Interfaces
+Application uses graphical interface to interact with users (See Docs/Mockups/ for details).
+
+2.3  User Characteristics 
+Producted is intended for student of Belarusian State Univercity of Informatics and Radioelectronics of all courses and
+speciaties. It also may be used by BSUIR teachers, but is not specialized for that.
+Special skills aren't required.
+
+2.4 Assumptions and Dependencies
+ - Operating system – Windows 7/8/8.1/10.
+ - .NET Framework 4.5.2
+ - Internet connection for shedule downloading.
+
+
+3    SYSTEM REQUIREMENTS
+
+3.1 Functional Requirements
+ - App should have next windows with those features:
+   - Popup with timetable of current day (Day View);
+     - Day View should hide when focus is lost;
+     - Day View should have option to shift to next and previous day;
+   - Window with timetable for current week (Week View);
+     - Week View should show Teacher View when user clicks on teacher's name;
+     - Week View should have option to shift to next and previous week;
+     - Week View should show popups with additional info about the discipline under cursor;
+   - Window with timetable for teacher (Teacher View);
+     - Teacher View should have option to shift to next and previous week;
+   - Window with preferences;
+ - App should provide next info about classes:
+   - Time of beginning and ending;
+   - Name of the discipline;
+   - Name of the teacher;
+   - Number of study room;
+   - Type of classes(lecture/practice/lab).
+ - App must launch at system startup in hidden mode.
+ - App should have a tray icon with next functions:
+   - Provide access to Day View on click;
+   - Provide access to Week View from context menu;
+   - Provide access to Teacher View from context menu;
+   - Provide access to preferences window from context menu;
+   - Provide opportunity to terminate app from context menu.
+ - App must provide a way to update shedule whenever the user wants.
+
+3.2 Non-Functional Requirements
+3.2.1 Software quality attributes
+ - Security - product is free, open-source and uses data from publicly available sources. Neither security nor
+cryptography is required.
+ - Reliability - product must be stable and work on all supported Windows systems equally. Also product's basic
+functionality must work without internet connection after shedule downloading.
+ - Relevance - product must provide up-to-date information.
