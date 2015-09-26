@@ -20,9 +20,10 @@ There are a variety of shedule applications for BSUIR in mobile stores. This pro
 but on desktops. Due to this application is in fact the only one of its kind at the moment.
 Main advantage of the app is opportunity to check timetable without distraction from work, thanks to tray icon and
 popup.
+App will not have support for shedule editing.
 
 1.3 Definitions, Acronyms, and Abbreviations  
- - BSUIR - Belarusian State Univercity of Informatics and Radioelectronics
+ - BSUIR - Belarusian State University of Informatics and Radioelectronics
 
 1.4 References  
 
